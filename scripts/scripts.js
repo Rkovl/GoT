@@ -1,141 +1,57 @@
-const kanye = [
-    "2024",
-    "All you have to be is yourself",
-    "Believe in your flyness...conquer your shyness.",
-    "Burn that excel spread sheet",
-    "Decentralize",
-    "Distraction is the enemy of vision",
-    "Everything you do in life stems from either fear or love",
-    "For me giving up is way harder than trying.",
-    "For me, money is not my definition of success. Inspiring people is a definition of success",
-    "Fur pillows are hard to actually sleep on",
-    "George Bush doesn't care about black people",
-    "Have you ever thought you were in love with someone but then realized you were just staring in a mirror for 20 minutes?",
-    "I care. I care about everything. Sometimes not giving a f#%k is caring the most.",
-    "I feel calm but energized",
-    "I feel like I'm too busy writing history to read it.",
-    "I feel like me and Taylor might still have sex",
-    "I give up drinking every week",
-    "I leave my emojis bart Simpson color",
-    "I love sleep; it's my favorite.",
-    "I make awesome decisions in bike stores!!!",
-    "I really love my Tesla. I'm in the future. Thank you Elon.",
-    "I still think I am the greatest.",
-    "I think I do myself a disservice by comparing myself to Steve Jobs and Walt Disney and human beings that we've seen before. It should be more like Willy Wonka...and welcome to my chocolate factory.",
-    "I want the world to be better! All I want is positive! All I want is dopeness!",
-    "I wish I had a friend like me",
-    "I'd like to meet with Tim Cook. I got some ideas",
-    "I'll say things that are serious and put them in a joke form so people can enjoy them. We laugh to keep from crying.",
-    "I'm a creative genius",
-    "I'm nice at ping pong",
-    "I'm the best",
-    "If I don't scream, if I don't say something then no one's going to say anything.",
-    "If I got any cooler I would freeze to death",
-    "If you have the opportunity to play this game of life you need to appreciate every moment. a lot of people don't appreciate the moment until it's passed.",
-    "Just stop lying about shit. Just stop lying.",
-    "Keep squares out yo circle",
-    "Keep your nose out the sky, keep your heart to god, and keep your face to the rising sun.",
-    "Let's be like water",
-    "Man... whatever happened to my antique fish tank?",
-    "My dad got me a drone for Christmas",
-    "My greatest award is what I'm about to do.",
-    "My greatest pain in life is that I will never be able to see myself perform live.",
-    "One day I'm gon' marry a porn star",
-    "One of my favorite of many things about what the Trump hat represents to me is that people can't tell me what to do because I'm black",
-    "Only free thinkers",
-    "People always say that you can't please everybody. I think that's a cop-out. Why not attempt it? Cause think of all the people that you will please if you try.",
-    "People always tell you 'Be humble. Be humble.' When was the last time someone told you to be amazing? Be great! Be awesome! Be awesome!",
-    "People only get jealous when they care.",
-    "Perhaps I should have been more like water today",
-    "Pulling up in the may bike",
-    "Shut the fuck up I will fucking laser you with alien fucking eyes and explode your fucking head",
-    "Sometimes I push the door close button on people running towards the elevator. I just need my own elevator sometimes. My sanctuary.",
-    "Sometimes you have to get rid of everything",
-    "Style is genderless",
-    "The thought police want to suppress freedom of thought",
-    "The world is our family",
-    "The world is our office",
-    "Today is the best day ever and tomorrow's going to be even better",
-    "Truth is my goal. Controversy is my gym. I'll do a hundred reps of controversy for a 6 pack of truth",
-    "Tweeting is legal and also therapeutic",
-    "We all self-conscious. I'm just the first to admit it.",
-    "We came into a broken world. And we're the cleanup crew.",
-    "You can't look at a glass half full or empty if it's overflowing.",
-    "I hate when I'm on a flight and I wake up with a water bottle next to me like oh great now I gotta be responsible for this water bottle",
-    "All the musicians will be free",
-    "Artists are founders",
-    "Buy property",
-    "Culture is the most powerful force in humanity under God",
-    "Empathy is the glue",
-    "I am one of the most famous people on the planet",
-    "I am running for President of the United States",
-    "I am the head of Adidas. I will bring Adidas and Puma back together and bring me and jay back together",
-    "I am Warhol. I am the No. 1 most impactful artist of our generation. I am Shakespeare in the flesh.",
-    "I channel Will Ferrell when I'm at the daddy daughter dances",
-    "I don't wanna see no woke tweets or hear no woke raps ... it's show time ... it's a whole different energy right now",
-    "I hear people say this person is cool and this person is not cool. People are cool. Man has never invented anything as awesome as a an actual person but sometimes we value the objects we create over life itself",
-    "I honestly need all my Royeres to be museum quality... if I see a fake Royere Ima have to Rick James your couch",
-    "I love UZI. I be saying the same thing about Steve Jobs. I be feeling just like UZI",
-    "I need an army of angels to cover me while I pull this sword out of the stone",
-    "I spoke to Dave Chapelle for two hours this morning. He is our modern day Socrates",
-    "I was just speaking with someone that told me their life story and they used to be homeless.",
-    "I watch Bladerunner on repeat",
-    "I'm giving all Good music artists back the 50% share I have of their masters",
-    "I'm going to personally see to it that Taylor Swift gets her masters back. Scooter is a close family friend",
-    "I'm the new Moses",
-    "Life is the ultimate gift",
-    "Ma$e is one of my favorite rappers and I based a lot of my flows off of him",
-    "Manga all day",
-    "My first pillar when I'm on the board of adidas will be an adidas Nike collaboration to support community growth",
-    "My mama was a' English teacher. I know how to use correct English but sometimes I just don't feel like it aaaand I ain't got to",
-    "My memories are from the future",
-    "My mother in law Kris Jenner ... makes the best music playlist",
-    "People say it's enough and I got my point across ... the point isn't across until we cross the point",
-    "People tried to talk me out of running for President. Never let weak controlling people kill your spirit",
-    "So many of us need so much less than we have especially when so many of us are in need",
-    "Speak God's truth to power",
-    "The media tries to kill our heroes one at a time",
-    "The world needs more Joy... this idea is super fresh",
-    "There are 5 main pillars in a professional musicians business - Recording, Publishing, Touring, Merchandise & Name and likeness",
-    "There are people sleeping in parking lots",
-    "There's a crying need for civility across the board. We need to and will come together in the name of Jesus.",
-    "There's so many lonely emojis man",
-    "Trust me ... I won't stop",
-    "Two years ago we had 50 million people subscribed to music streaming services around the world. Today we have 400 million.",
-    "We are here to complete the revolution. We are building the future",
-    "We as a people will heal. We will insure the well being of each other",
-    "We have to evolve",
-    "We must and will cure homelessness and hunger. We have the capability as a species",
-    "We must form a union. We must unify",
-    "We used to diss Michael Jackson the media made us call him crazy ... then they killed him",
-    "We will be recognized",
-    "We will change the paradigm",
-    "We will cure hunger",
-    "We will heal. We will cure.",
-    "We're going to move the entire music industry into the 21st Century",
-    "We've gotten comfortable with not having what we deserve",
-    "Who made up the term major label in the first place???",
-    "Winning is the only option",
-    "For me to say I wasn't a genius I'd just be lying to you and to myself",
-    "I've known my mom since I was zero years old. She is quite dope.",
-    "I don't expect to be understood at all.",
-    "I'm on the pursuit of awesomeness, excellence is the bare minimum.",
-    "You basically can say anything to someone on an email or text as long as you put LOL at the end."
-]
-let ranKanye = kanye[Math.floor(Math.random()*kanye.length)];
-/*todo
-create cards
-    name and aliases
-    titles
-    quote - api
-    allegiances
-        coatofarms pic
-        house name
+const houseMottos = [
+    "In darkness, we find the light within us all",
+    "Our strength lies in unity and the honor we uphold",
+    "From the ashes, we shall rise again stronger than before",
+    "The brave defend the weak without fear or hesitation",
+    "Through trials and tribulations, we find our true strength",
+    "The sword protects, the heart decides the fate of all",
+    "With every dawn, our resolve grows stronger and unyielding",
+    "In silence, we strike swift and true as a shadow",
+    "The wind whispers of our unyielding spirit and bravery",
+    "Blood binds us; honor sets us apart from others",
+    "Together we stand, divided we fall into oblivion",
+    "In the shadows, we find our greatest power and resolve",
+    "For family and honor, we endure all things with pride",
+    "No storm shall break our iron will and determination",
+    "In our veins runs the fire of courage and righteousness",
+    "Honor in life, loyalty even in death's cold embrace",
+    "With wisdom and courage, we rule with might and fairness",
+    "The bond of family is stronger than steel and stone",
+    "Our hearts beat with the strength of lions and eagles",
+    "The flame of justice burns within us all forever",
+    "From the depths of despair, we rise to the summit of hope",
+    "With every challenge, we grow ever stronger and more resilient",
+    "Our spirit is fierce, our will is iron, our hearts are true",
+    "Duty compels us, honor guides us forward in all things",
+    "We protect those who cannot defend themselves from harm",
+    "By honor, valor, and unwavering resolve, we live our truth",
+    "Strength of heart, steel of hand, wisdom of mind, soul of fire",
+    "Our legacy is carved in stone and blood, remembered forever",
+    "In times of peace, we prepare for war without hesitation",
+    "With each breath, we vow to protect freedom and justice",
+    "The sun sets, but our resolve does not wane or fade",
+    "Every star in the sky is a guiding light for our path",
+    "In the face of danger, we do not falter or retreat",
+    "Our blades are sharp, our minds are sharper still",
+    "From the mountains to the sea, we reign supreme",
+    "Every drop of blood spilled is a sacrifice honored and remembered",
+    "With every sunrise, our destiny unfolds anew and bright",
+    "We are the shield against the coming storm of darkness",
+    "In silence, we prepare; in battle, we roar like lions",
+    "The spirit of the dragon lives in our hearts and souls",
+    "Every step forward is a step toward our destiny and legacy",
+    "When the night is darkest, our light shines brightest of all",
+    "Honor binds us, courage defines us, strength guides us always",
+    "In the crucible of war, we forge unbreakable bonds of loyalty",
+    "The earth trembles at the sound of our march to victory",
+    "A house united is a house invincible in strife and peace",
+    "Through blood and fire, we find our purpose and calling",
+    "Our past is our strength, our future our destiny uncharted",
+    "Every breath taken is a vow to protect the realm from evil",
+    "In our veins flows the blood of conquerors and kings eternal",
+    "The storm rages, but we stand resolute and unyielding in it"
+  ];
 
-scroll
-overlay
-
-*/ 
 let olContent =  document.querySelector("#olContent")
 
 
@@ -155,7 +71,6 @@ const on = async(id)=> {
             console.log(CoANumb)
 
             olContent.innerHTML += `<div><img src="https://armoria.herokuapp.com/?size=250&format=png&seed=${CoANumb}" alt="CoA Image">${houseData.name}</div>`
-            
         }
     }
     else{
@@ -181,13 +96,6 @@ let total = 50
 let multi = 0
 
 
-// const quoteFetch = async ()=>{
-//     let results = await fetch('https://www.poemist.com/api/v1/randompoems')
-//     if (!results.ok) {
-//         throw new Error(`An error occurred: ${results.status}`);
-//     }
-//     return await results.json();
-// }
 const houseFetch = async (link) =>{
     let results = await fetch(link)
     if (!results.ok) {
@@ -207,29 +115,19 @@ const charFetch = async (page)=>{
 }
 
 const loadFetch = async(page)=>{
-    // let B = 5
-    // let poem
-    console.log('work?')
     const charData = await charFetch(page)
-    console.log(charData)
     for(let A = 0; A<charData.length;A++){
-        console.log(A+(total*multi))
-        // while(B == 5){
-        //     console.log('while start')
-        //     poem = await quoteFetch()
-        //     console.log('we wait?')
-        //     B = 0
-        //     console.log(poem)
-        // }
-        
+        let ranHouseMottos = houseMottos[Math.floor(Math.random()*houseMottos.length)];
+        let charTitle =  charData[A].titles[0] ? `<h6 class="card-subtitle mb-2 text-muted">${charData[A].titles[0]}</h6>` :  `<h6 class="card-subtitle mb-2 text-muted">One who lacks a title</h6>`
+
         if(charData[A].aliases != ''){
             charClass.innerHTML += `
             <div class="col"style="height: 300px">
                 <div class="card h-100 text-center">
                     <div class="card-body">
                         <h5 class="card-title">${charData[A].name}${' Known as '+charData[A].aliases[0]}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">${charData[A].titles[0]}</h6>
-                        <p class="card-text">${kanye[Math.floor(Math.random()*kanye.length)]}</p>
+                        ${charTitle}
+                        <p class="card-text">${ranHouseMottos}</p>
                     </div>
                     <div class="card-footer">
                     <button onclick="on(this.id)" type="button" class="btn btn-primary"  id="${charData[A].allegiances}">Allegiances</button>
@@ -244,8 +142,8 @@ const loadFetch = async(page)=>{
                 <div class="card h-100 text-center">
                     <div class="card-body">
                         <h5 class="card-title">${charData[A].name}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">${charData[A].titles[0]}</h6>
-                        <p class="card-text">${kanye[Math.floor(Math.random()*kanye.length)]}</p>
+                        ${charTitle}
+                        <p class="card-text">${ranHouseMottos}</p>
                     </div>
                     <div class="card-footer">
                     <button  onclick="on(this.id)" type="button" class="btn btn-primary" id="${charData[A].allegiances}">Allegiances</button>
@@ -254,7 +152,6 @@ const loadFetch = async(page)=>{
             </div>
             `
         }
-        // B++
     }
     multi++
 }
@@ -273,53 +170,3 @@ window.addEventListener('scroll', () => {
     passive: true
 });
 loadFetch()
-
-
-
-
-// charFetch.then(data=>{
-//     let B = 5
-//     let poem
-//     console.log('work?')
-//     for(let A = 0; A<data.length;A++){
-//         while(B == 5){
-//             poem = quoteFetch
-//             B = 0
-//             console.log(poem)
-//         }
-        
-//         if(data[A].aliases != ''){
-//             charClass.innerHTML += `
-//             <div class="col">
-//                 <div class="card h-100">
-//                     <div class="card-body">
-//                         <h5 class="card-title">${data[A].name}${' Known as '+data[A].aliases[0]}</h5>
-//                         <h6 class="card-subtitle mb-2 text-muted">${data[A].titles[0]}</h6>
-//                         <p class="card-text">${poem[B].content}</p>
-//                         <button type="button" class="btn btn-primary id="${A+(total*(page-1)+1)}">Allegiances</button>
-//                     </div>
-//                 </div>
-//             </div>
-//             `
-//         }
-//         else{
-//             charClass.innerHTML += `
-//             <div class="col">
-//                 <div class="card h-100">
-//                     <div class="card-body">
-//                         <h5 class="card-title">${data[A].name}</h5>
-//                         <h6 class="card-subtitle mb-2 text-muted">${data[A].titles[0]}</h6>
-//                         <p class="card-text"></p>
-//                         <button type="button" class="btn btn-primary id="${A+(total*(page-1)+1)}">Allegiances</button>
-//                     </div>
-//                 </div>
-//             </div>
-//             `
-//         }
-//         B++
-//     }
-// })
-
-
-
-// Promise.all([charFetch,quoteFetch])
