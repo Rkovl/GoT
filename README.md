@@ -1,4 +1,4 @@
-# Draw.io
+# Game of Thrones Characters Project
 
 ![OnPaste 20220906-111411](https://i.imgur.com/e6P0OsU.png)
 
